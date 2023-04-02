@@ -1,3 +1,4 @@
+// add ringtone
 var sound = new Audio("alarmmusic.mp3")
 sound.loop = true;
 
@@ -171,7 +172,7 @@ document.getElementById("setalerm").addEventListener("click", function () {
 
         // When real time matches with alarm time, the alarm shows an alert and then starts ringing
         if (arr.length != 0 && arr[0][0] == hr && arr[0][1] == min && arr[0][2] == sec && arr[0][3] == selectedAMPM) {
-            alert("alarm is ringing");
+            //  alert("alarm is ringing");
             sound.play()
            
         }
